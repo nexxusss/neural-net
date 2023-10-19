@@ -81,3 +81,9 @@ drelu_dx2 = drelu_dxw2 * dmul_dx2
 drelu_dw2 = drelu_dxw2 * dmul_dw2
 
 print(drelu_dx0, drelu_dw0, drelu_dx1, drelu_dw1, drelu_dx2, drelu_dw2)
+
+# we can put these gradients in a vector so to summarize all the info we have
+
+dx = [drelu_dx0, drelu_dx1, drelu_dx2]
+dw = [drelu_dw0, drelu_dw1, drelu_dw2]
+db = drelu_db
